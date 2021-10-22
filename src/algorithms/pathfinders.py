@@ -32,7 +32,7 @@ class Vertex:
         return self.cost
 
     def get_dist_from_source(self) -> int:
-        return distance_from_source
+        return self.distance_from_source
 
     def update_cost(self, cost):
         self.cost = cost
@@ -185,11 +185,11 @@ class DjikstraFinder(Pathfinder):
         return xlist, ylist
 
 
-    class AStarFinder(Pathfinder):
+class AStarFinder(Pathfinder):
 
-        def __init__(self):
-            super(AStarFinder, self).__init__()
+    def __init__(self):
+        super(AStarFinder, self).__init__()
 
-        def solve(self) -> List[List[Vertex]]:
-            #TODO extend vertex for A* since it needs to hold more data
-            pass
+    def solve(self) -> List[List[Vertex]]:
+        #TODO extend vertex for A* since it needs to hold more data
+        pass
