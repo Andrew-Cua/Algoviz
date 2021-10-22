@@ -191,4 +191,5 @@ class DjikstraFinder(Pathfinder):
             super(AStarFinder, self).__init__()
 
         def solve(self) -> List[List[Vertex]]:
+            #TODO extend vertex for A* since it needs to hold more data
             pass
