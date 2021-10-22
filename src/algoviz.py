@@ -67,6 +67,11 @@ class AlgorithimVisualizer:
 
 
 
+
+
+
+''' TODO refactor below into classes above'''
+
 finder = DjikstraFinder()
 finder.initialize_start_matrix([[1,1,1,1,1],
                                 [12,12,12,12,1],

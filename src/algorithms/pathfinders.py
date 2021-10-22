@@ -183,3 +183,12 @@ class DjikstraFinder(Pathfinder):
             ylist.append(vertex.y)
 
         return xlist, ylist
+
+
+    class AStarFinder(Pathfinder):
+
+        def __init__(self):
+            super(AStarFinder, self).__init__()
+
+        def solve(self) -> List[List[Vertex]]:
+            pass
